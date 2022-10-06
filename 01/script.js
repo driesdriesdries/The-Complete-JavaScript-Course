@@ -47,3 +47,5 @@ console.log(typeof year);
 
 //bug in javascript. It's not an object
 console.log(typeof null);
+
+//This is a test
