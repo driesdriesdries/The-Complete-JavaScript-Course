@@ -48,4 +48,19 @@ console.log(typeof year);
 //bug in javascript. It's not an object
 console.log(typeof null);
 
-//This is a test
+//let is used to declare variables that can change/mutated later
+let age = 30;
+age = 31;
+//You are allowed to declare empty vairables with let
+
+
+//Const is used to declare a variable that will never change
+const birthYear = 1988;
+birthYear = 1989;
+console.log(typeof birthYear);
+//You are not allowed to declare empty vairables with const
+
+//by default, rather used const, unless super sure the 
+
+//var should be avoided as it's legacy stuff. Works the same as let. variables can also be mutated
+//make sure to properly declare variables.
