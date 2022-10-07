@@ -56,7 +56,7 @@ age = 31;
 
 //Const is used to declare a variable that will never change
 const birthYear = 1988;
-birthYear = 1989;
+// birthYear = 1989;
 console.log(typeof birthYear);
 //You are not allowed to declare empty vairables with const
 
@@ -64,3 +64,47 @@ console.log(typeof birthYear);
 
 //var should be avoided as it's legacy stuff. Works the same as let. variables can also be mutated
 //make sure to properly declare variables.
+
+
+//Math Operators Lesson
+
+const now = 2037;
+
+const ageDries = now - 1991;
+const ageSarah = now - 2018;
+
+//One can log mulitple values in the same declaration
+console.log(ageDries, ageSarah);
+
+//2 ** 3 means 2 to the power of 3
+console.log(ageDries * 2, ageDries/10, 2 ** 3);
+
+//One can concatenate by using a + symbol
+const firstName = "Dries";
+const lastName = "Bester";
+//My own monster
+const oneSpaceString = " ";
+
+console.log(firstName + " " +lastName);
+console.log(firstName + oneSpaceString +lastName);
+
+//Assignment operators
+let x = 10 + 5; //15
+x += 10; // x = x+10 which makes it 25
+x *= 4; //x= x*4; ie 100
+x++; // x= x+1;
+x--; // x= x-1;
+x--; // x= x-1;
+console.log(x);
+
+//Comparison Operators
+//Used to produce boolean values
+
+//try to figure out if dries is greater than sarah
+console.log(ageDries > ageSarah);
+console.log(ageDries < ageSarah);
+console.log(ageSarah >= 18);
+
+//const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
