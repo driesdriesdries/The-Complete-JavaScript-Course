@@ -89,13 +89,13 @@ console.log(firstName + " " +lastName);
 console.log(firstName + oneSpaceString +lastName);
 
 //Assignment operators
-let x = 10 + 5; //15
-x += 10; // x = x+10 which makes it 25
-x *= 4; //x= x*4; ie 100
-x++; // x= x+1;
-x--; // x= x-1;
-x--; // x= x-1;
-console.log(x);
+// let x = 10 + 5; //15
+// x += 10; // x = x+10 which makes it 25
+// x *= 4; //x= x*4; ie 100
+// x++; // x= x+1;
+// x--; // x= x-1;
+// x--; // x= x-1;
+// console.log(x);
 
 //Comparison Operators
 //Used to produce boolean values
@@ -108,3 +108,14 @@ console.log(ageSarah >= 18);
 //const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+
+// Order of operator precendence
+// Declaring two variables at once
+let x, y;
+
+x = y = 25 - 10 -5;
+console.log(x,y)
+// subtraction has higher precendence than assignment
+
+const averageAge = (ageDries + ageSarah) / 2;
+console.log(ageDries, ageSarah, averageAge);
