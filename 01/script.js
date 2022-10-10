@@ -36,14 +36,14 @@ console.log(typeof jsIsFun);
 jsIsFun = "Yolo";
 console.log(typeof jsIsFun);
 
-let year;
+// let year;
 //value is undefined
-console.log(year);
+//console.log(year);
 //datatype is also undefined
-console.log(typeof year);
+//console.log(typeof year);
 
-year = 1991;
-console.log(typeof year);
+//year = 1991;
+//console.log(typeof year);
 
 //bug in javascript. It's not an object
 console.log(typeof null);
@@ -55,9 +55,9 @@ age = 31;
 
 
 //Const is used to declare a variable that will never change
-const birthYear = 1988;
+//const birthYear = 1988;
 // birthYear = 1989;
-console.log(typeof birthYear);
+//console.log(typeof birthYear);
 //You are not allowed to declare empty vairables with const
 
 //by default, rather used const, unless super sure the 
@@ -80,13 +80,13 @@ console.log(ageDries, ageSarah);
 console.log(ageDries * 2, ageDries/10, 2 ** 3);
 
 //One can concatenate by using a + symbol
-const firstName = "Dries";
+//const firstName = "Dries";
 const lastName = "Bester";
 //My own monster
 const oneSpaceString = " ";
 
-console.log(firstName + " " +lastName);
-console.log(firstName + oneSpaceString +lastName);
+///console.log(firstName + " " +lastName);
+//console.log(firstName + oneSpaceString +lastName);
 
 //Assignment operators
 // let x = 10 + 5; //15
@@ -137,3 +137,27 @@ console.log('John has a BMI of' + oneSpaceString + johnBMI);
 
 const markHigherBMI = (markBMI > johnBMI);
 console.log(markHigherBMI);
+
+//Strings and template literals
+console.log("this is the start of lesson 17");
+
+const firstName = "Dries";
+const job = "Teacher";
+const birthYear = "1988";
+const year = 2022;
+
+const dries = "I'm " +oneSpaceString + firstName + ", my job is that of a " + job + " and I am " +(year-birthYear) + " years old";
+console.log(dries);
+
+//Template literal can combined mulitple pieces into a single string
+const driesNew = `I'm ${firstName}, a ${job}, and I was born in ${year-birthYear}` ;
+console.log(driesNew);
+
+//Template literals can alos be used for multi line strings
+console.log('this is a classic \n\
+way of writing multi \n\
+line strings in JS');
+
+console.log(`testing this
+new way
+of doing things`);
