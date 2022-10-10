@@ -119,3 +119,21 @@ console.log(x,y)
 
 const averageAge = (ageDries + ageSarah) / 2;
 console.log(ageDries, ageSarah, averageAge);
+
+// Coding Challenge #1
+// BMI = mass / height ** 2
+// BMI = mass / height * height
+
+const markWeight = 78;
+const markHeight = 1.69;
+const johnWeight = 92;
+const johnHeight = 1.95;
+
+const markBMI = markWeight / (markHeight*markHeight);
+console.log('Mark has a BMI of' + oneSpaceString + markBMI);
+
+const johnBMI = johnWeight / (johnHeight*johnHeight);
+console.log('John has a BMI of' + oneSpaceString + johnBMI);
+
+const markHigherBMI = (markBMI > johnBMI);
+console.log(markHigherBMI);
