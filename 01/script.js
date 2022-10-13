@@ -163,23 +163,49 @@
 // of doing things`);
 
 
-// Lesson 18 - Control Structures
-const age = 15;
+// // Lesson 18 - Control Structures
+// const age = 15;
 
-//Example of an if else control structure. Allows us to have more control over how code is executed
-if ( age >= 18) {
-    console.log(`Sarah can start driving 🚗`);
-    // emoji an be made with cmd cntrl space
-} else {
-    const yearsLeft = 18-age;
-    console.log(`unfrotunately sarah cannot drive yet 😢. She still has ${yearsLeft} years to wait`);
-}
+// //Example of an if else control structure. Allows us to have more control over how code is executed
+// if ( age >= 18) {
+//     console.log(`Sarah can start driving 🚗`);
+//     // emoji an be made with cmd cntrl space
+// } else {
+//     const yearsLeft = 18-age;
+//     console.log(`unfrotunately sarah cannot drive yet 😢. She still has ${yearsLeft} years to wait`);
+// }
 
-const birthYear = 2012;
-let century;
-if(birthYear <= 2000){
-    century = 20;
+// const birthYear = 2012;
+// let century;
+// if(birthYear <= 2000){
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+// console.log(century);
+
+//Coding Challenge #2
+
+//BMI = mass / height ** 2
+//BMI = mass / height * height
+
+const markWeight = 78;
+const markHeight = 1.69;
+const johnWeight = 92;
+const johnHeight = 1.95;
+// const johnHeight = 1;
+
+const markBMI = markWeight / (markHeight*markHeight);
+console.log('Mark has a BMI of' + ' ' + markBMI);
+
+const johnBMI = johnWeight / (johnHeight*johnHeight);
+console.log('John has a BMI of' + ' ' + johnBMI);
+
+const markHigherBMI = (markBMI > johnBMI);
+console.log(markHigherBMI);
+
+if (markBMI > johnBMI ){
+    console.log(`Mark has a higher BMI with a value of ${markBMI}`);
 } else {
-    century = 21;
+    console.log(`John has a higher BMI with a value of ${johnBMI}`);
 }
-console.log(century);
