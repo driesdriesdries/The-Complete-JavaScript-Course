@@ -214,28 +214,57 @@
 // Type conversion - when manually convert from one to another
 // Type coercion is when JS does behind the scenes for us
 
-// Type conversion
-const inputYear = `1991`;
-// Converting a string to a number
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
-// This will produce a NAN, even though it is a number... its just an invalid number
-console.log(Number(`Dries`));
-console.log(String(22), 22);
+// // Type conversion
+// const inputYear = `1991`;
+// // Converting a string to a number
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
+// // This will produce a NAN, even though it is a number... its just an invalid number
+// console.log(Number(`Dries`));
+// console.log(String(22), 22);
 
-// Type Coercion
-// String number and string. Plus sign is triggering the coercion, and changing the number into a string
-console.log("I am " + 23 + " years old");
+// // Type Coercion
+// // String number and string. Plus sign is triggering the coercion, and changing the number into a string
+// console.log("I am " + 23 + " years old");
 
-// JS automatically converting strings into number 
-console.log('23' - '10' - 3);
+// // JS automatically converting strings into number 
+// console.log('23' - '10' - 3);
 
-// The minus operator converts strings into numbers where the Plus operator converts numbers to strings!!!
-console.log('10' * '3'); //The multiplication operator can only work with numbers! Same is true for dividing 
+// // The minus operator converts strings into numbers where the Plus operator converts numbers to strings!!!
+// console.log('10' * '3'); //The multiplication operator can only work with numbers! Same is true for dividing 
 
-// Silly example
-let n = '1' + 1;
-//this turns into a string of "11"
-n = n - 1;
-// This takes the string of "11" and by using the subtracting operator with value of 1 makes strings into numbers. 
-console.log(n);
+// // Silly example
+// let n = '1' + 1;
+// //this turns into a string of "11"
+// n = n - 1;
+// // This takes the string of "11" and by using the subtracting operator with value of 1 makes strings into numbers. 
+// console.log(n);
+
+// Truty and Falsy values
+//There are five types of falsy values
+//0
+//empty string
+//undefined
+//null
+//NAN
+//these will all become false when being converted into a boolean
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(''));
+console.log(Boolean({}));
+
+const money = 10;
+if(money){
+    console.log('Dont spend it all');
+} else {
+    console.log(`You shuold've gotten a job`);
+}
+//Whats happening above is that JS is trying to force the conddition intoa boolean value
+
+let height;
+if (height){
+    console.log(`height is defined`);
+} else {
+    console.log(`height is not defined`);
+}
