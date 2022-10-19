@@ -249,22 +249,50 @@
 //NAN
 //these will all become false when being converted into a boolean
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean(''));
-console.log(Boolean({}));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(''));
+// console.log(Boolean({}));
 
-const money = 10;
-if(money){
-    console.log('Dont spend it all');
-} else {
-    console.log(`You shuold've gotten a job`);
-}
-//Whats happening above is that JS is trying to force the conddition intoa boolean value
+// const money = 10;
+// if(money){
+//     console.log('Dont spend it all');
+// } else {
+//     console.log(`You shuold've gotten a job`);
+// }
+// //Whats happening above is that JS is trying to force the conddition intoa boolean value
 
-let height;
-if (height){
-    console.log(`height is defined`);
+// let height;
+// if (height){
+//     console.log(`height is defined`);
+// } else {
+//     console.log(`height is not defined`);
+// }
+
+// Lesson 22 Equality operators
+const age = '18';
+if (age === 18) console.log(`You just became an adult`);
+// === strict equality operator. When two things are exaclty the same. Does not do type coercion
+console.log(18 === 18);
+console.log('18' === 18);
+
+// == loose equality operator. Does type coercion. Avoid using as much as possible
+console.log('18' == 18);
+
+const favourite = Number(prompt(`What is your favourite number?`));
+// console.log(typeof favourite);
+
+//loose equality operator doing type coercion
+if (favourite == 23) {
+    console.log(`cool, 23 is an amazing number`);
+} else if (favourite === 7) {
+    console.log(`seven is also a cool number`);
 } else {
-    console.log(`height is not defined`);
+    console.log(`Number is not 23 or 7`);
 }
+
+// you cant write as many else if conditions as you want
+
+// There is also an operator for different
+
+if (favourite !== 23) console.log(`Why not 23?`);
