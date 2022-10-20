@@ -296,3 +296,7 @@ if (favourite == 23) {
 // There is also an operator for different
 
 if (favourite !== 23) console.log(`Why not 23?`);
+
+//Lesson 23 Boolean Logic
+// AND and OR operators
+// ! the not operator has precendence
