@@ -266,37 +266,62 @@
 // if (height){
 //     console.log(`height is defined`);
 // } else {
-//     console.log(`height is not defined`);
+// //     console.log(`height is not defined`);
+// // }
+
+// // Lesson 22 Equality operators
+// const age = '18';
+// if (age === 18) console.log(`You just became an adult`);
+// // === strict equality operator. When two things are exaclty the same. Does not do type coercion
+// console.log(18 === 18);
+// console.log('18' === 18);
+
+// // == loose equality operator. Does type coercion. Avoid using as much as possible
+// console.log('18' == 18);
+
+// const favourite = Number(prompt(`What is your favourite number?`));
+// // console.log(typeof favourite);
+
+// //loose equality operator doing type coercion
+// if (favourite == 23) {
+//     console.log(`cool, 23 is an amazing number`);
+// } else if (favourite === 7) {
+//     console.log(`seven is also a cool number`);
+// } else {
+//     console.log(`Number is not 23 or 7`);
 // }
 
-// Lesson 22 Equality operators
-const age = '18';
-if (age === 18) console.log(`You just became an adult`);
-// === strict equality operator. When two things are exaclty the same. Does not do type coercion
-console.log(18 === 18);
-console.log('18' === 18);
+// // you cant write as many else if conditions as you want
 
-// == loose equality operator. Does type coercion. Avoid using as much as possible
-console.log('18' == 18);
+// // There is also an operator for different
 
-const favourite = Number(prompt(`What is your favourite number?`));
-// console.log(typeof favourite);
+// if (favourite !== 23) console.log(`Why not 23?`);
 
-//loose equality operator doing type coercion
-if (favourite == 23) {
-    console.log(`cool, 23 is an amazing number`);
-} else if (favourite === 7) {
-    console.log(`seven is also a cool number`);
+// //Lesson 23 Boolean Logic
+// // AND and OR operators
+// // ! the not operator has precendence
+
+// //Lesson 24 Logical Operators
+const hasDriversLicense = true;
+const hasGoodVision = true;
+// console.log(hasDriversLicense && hasGoodVision); //both needs to be true
+// console.log(hasDriversLicense || hasGoodVision); //only one needs to be true
+// console.log(!hasDriversLicense); //the not symbol inverts 
+
+// // const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log(`Sarah is able to drive`);
+// } else {
+//     console.log(`better that Sarah doesnt drive`);
+// }
+
+const isTired = false;
+
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log(`Sarah is able to drive`);
 } else {
-    console.log(`Number is not 23 or 7`);
+    console.log(`better that Sarah doesnt drive`);
 }
-
-// you cant write as many else if conditions as you want
-
-// There is also an operator for different
-
-if (favourite !== 23) console.log(`Why not 23?`);
-
-//Lesson 23 Boolean Logic
-// AND and OR operators
-// ! the not operator has precendence
