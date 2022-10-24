@@ -326,37 +326,83 @@
 //     console.log(`better that Sarah doesnt drive`);
 // }
 
-// Lesson 25 Coding Challenge
-// calculate average score for each team
-// Dolphins
-const dolphinsAverageScore = (97 + 112 + 80)/3;
-console.log(dolphinsAverageScore);
+// // Lesson 25 Coding Challenge
+// // calculate average score for each team
+// // Dolphins
+// const dolphinsAverageScore = (97 + 112 + 80)/3;
+// console.log(dolphinsAverageScore);
 
-//Koalas
-const koalasAverageScore = (109 + 95 + 50)/3;
-console.log(koalasAverageScore);
+// //Koalas
+// const koalasAverageScore = (109 + 95 + 50)/3;
+// console.log(koalasAverageScore);
 
-// Real Try
+// // Real Try
 
-//Dolphins have higher score than koalasAverageScore, and it's higher than or equal to 100
-if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100){
-    console.log(`Team Dolphin is the winner with a score of ${dolphinsAverageScore}, which is higher than 100, and more than team Koalas score of ${koalasAverageScore}`);
-} 
-// Dolphins have higher score than koalas but is less than 100
-else if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore < 100 ) {
-    console.log(`No one wins even though the Dolphins have a higher score of ${dolphinsAverageScore}`);
-}
-// Dolphins and koalas same score, and it's higher or equal to 100
-else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 100){
-    console.log(`It's a draw, and both teams have valid scores of ${dolphinsAverageScore}`);
-}
-// Dolphins and koalas have same score but it's less than 100
-else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore < 100){
-    console.log(`It's a draw, but both teams have invalid scores of ${dolphinsAverageScore} which is lower than 100`);
-}
-// Koalas have higher score than dolphins, and it's higher than, or equal to 100
-else if (koalasAverageScore > dolphinsAverageScore && koalasAverageScore >= 100){
-    console.log(`Koalas win, with a valid score of ${koalasAverageScore}, which is over 100 and more than ${dolphinsAverageScore}`);
-} else {
-    console.log(`Koalas win, but their score of ${koalasAverageScore} is invalid. This means no one wins`);
-}
+// //Dolphins have higher score than koalasAverageScore, and it's higher than or equal to 100
+// if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100){
+//     console.log(`Team Dolphin is the winner with a score of ${dolphinsAverageScore}, which is higher than 100, and more than team Koalas score of ${koalasAverageScore}`);
+// } 
+// // Dolphins have higher score than koalas but is less than 100
+// else if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore < 100 ) {
+//     console.log(`No one wins even though the Dolphins have a higher score of ${dolphinsAverageScore}`);
+// }
+// // Dolphins and koalas same score, and it's higher or equal to 100
+// else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 100){
+//     console.log(`It's a draw, and both teams have valid scores of ${dolphinsAverageScore}`);
+// }
+// // Dolphins and koalas have same score but it's less than 100
+// else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore < 100){
+//     console.log(`It's a draw, but both teams have invalid scores of ${dolphinsAverageScore} which is lower than 100`);
+// }
+// // Koalas have higher score than dolphins, and it's higher than, or equal to 100
+// else if (koalasAverageScore > dolphinsAverageScore && koalasAverageScore >= 100){
+//     console.log(`Koalas win, with a valid score of ${koalasAverageScore}, which is over 100 and more than ${dolphinsAverageScore}`);
+// } else {
+//     console.log(`Koalas win, but their score of ${koalasAverageScore} is invalid. This means no one wins`);
+// }
+
+// // Lesson 26, the switch statement
+// const day = 'Monday'; //Strict comparison IE CAPS count
+
+// switch (day){
+//     case 'Monday':
+//         console.log(`Recover from the weekend`);
+//         console.log(`Watch the power rangers`);
+//         break; //the break enforces that the case stops.
+//     case 'Tuesday':
+//         console.log(`Tuesdays are from playing hockey`);
+//         break;
+//     case 'Wednesday':
+//     case 'Thursday':
+//         console.log(`On Wednesdays and Thursdays I write code`);
+//         break;
+//     case 'Friday':
+//         console.log(`The day I start preparing for the weekend`);
+//         break;
+//     case 'Saturday':
+//         console.log(`Usually we clean and have a good time`);
+//         break;
+//     case 'Sunday':
+//         console.log(`Remember to go to church mofucker`);
+//         break;
+//     default:
+//         console.log(`Not a valid day`);
+// }
+
+// console.log(`Let's write the same code using if else`);
+// if(day === 'Monday'){
+//     console.log(`Recover from the weekend`);
+//     console.log(`Watch the power rangers`);
+// } else if (day === 'Tuesday'){
+//     console.log(`Tuesdays are from playing hockey`);
+// } else if (day === 'Wednesday' || day === 'Thursday') {
+//     console.log(`On Wednesdays and Thursdays I write code`);
+// } else if (day === 'Friday'){
+//     console.log(`The day I start preparing for the weekend`);
+// } else if (day === 'Saturday'){
+//     console.log(`Usually we clean and have a good time`);
+// } else if (day === 'Sunday'){
+//     console.log(`Remember to go to church mofucker`);
+// } else {
+//     console.log(`Not a valid day`);
+// }
