@@ -406,3 +406,15 @@
 // } else {
 //     console.log(`Not a valid day`);
 // }
+
+// Lesson 27 Expressions and Statements
+// Expressions are a piece of code that produces a value
+// 3 + 4 is an expression 
+// 1991 is also just an expression. It produces a value of 1991
+// same goes for true and false;
+
+// Statements are bigger pieces of code that does not produce a value 
+// Statements are sentences and expressions are words 
+
+// In template literals , one can only place expressions, not statements
+
