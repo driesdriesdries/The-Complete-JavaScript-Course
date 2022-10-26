@@ -418,3 +418,26 @@
 
 // In template literals , one can only place expressions, not statements
 
+//Lesson 28 - the conditional operator // ternary operator
+//all in one line
+
+const age = 11;
+
+// age >= 18 ? console.log(`i like to drink wine `) :
+// console.log(`i like to drink water `);
+
+//Here we are saying that drink is equal to age, which if it is greater or equal to 18, becomes wine, else, becomes water
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if(age >= 18){
+    drink2 = 'wine';
+} else {
+    drink2 = 'water'
+}
+console.log(drink2);
+
+//because the ternary operator is actually an expression, it can be used in a template literal like below:
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+// Ternary operators are meant to be used for making quick decisions.
