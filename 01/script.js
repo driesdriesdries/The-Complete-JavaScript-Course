@@ -421,23 +421,45 @@
 //Lesson 28 - the conditional operator // ternary operator
 //all in one line
 
-const age = 11;
+// const age = 11;
 
-// age >= 18 ? console.log(`i like to drink wine `) :
-// console.log(`i like to drink water `);
+// // age >= 18 ? console.log(`i like to drink wine `) :
+// // console.log(`i like to drink water `);
 
-//Here we are saying that drink is equal to age, which if it is greater or equal to 18, becomes wine, else, becomes water
-const drink = age >= 18 ? 'wine' : 'water';
-console.log(drink);
+// //Here we are saying that drink is equal to age, which if it is greater or equal to 18, becomes wine, else, becomes water
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
 
-let drink2;
-if(age >= 18){
-    drink2 = 'wine';
-} else {
-    drink2 = 'water'
-}
-console.log(drink2);
+// let drink2;
+// if(age >= 18){
+//     drink2 = 'wine';
+// } else {
+//     drink2 = 'water'
+// }
+// console.log(drink2);
 
-//because the ternary operator is actually an expression, it can be used in a template literal like below:
-console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
-// Ternary operators are meant to be used for making quick decisions.
+// //because the ternary operator is actually an expression, it can be used in a template literal like below:
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+// // Ternary operators are meant to be used for making quick decisions.
+
+//Lesson 29 & coding challenge #4
+
+// What is the bill value
+const bill = 430;
+console.log(`the total bill is $${bill}`)
+
+// Calculating the tip percentage
+const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
+
+//converting the string to a number
+console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
+
+// Calculating the tip
+const tip = (bill*Number(tipPercentage)/100);
+console.log(`The tip amount based off the bill is ${(tip)}`);
+
+//calculating the total
+const total = bill + tip;
+
+//Writing the total
+console.log(`Your bill is $${bill}. Your tip is $${tip}. Your total is ${total}`);
