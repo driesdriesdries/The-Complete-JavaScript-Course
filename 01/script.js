@@ -463,3 +463,6 @@ const total = bill + tip;
 
 //Writing the total
 console.log(`Your bill is $${bill}. Your tip is $${tip}. Your total is ${total}`);
+
+// Lesson 30
+// Learned about JS history and versioning
