@@ -13,23 +13,41 @@
 // Lesson 33
 //Functions
 
-function logger(){
-    console.log('My name is Dries');
-}
+// function logger(){
+//     console.log('My name is Dries');
+// }
 
-//calling, running, invoking function
-logger();
+// //calling, running, invoking function
+// logger();
 
-function fruitProcessor (apples, oranges){
-    // console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+// function fruitProcessor (apples, oranges){
+//     // console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges`;
     
-    //saving the result of the function
-    return juice;
+//     //saving the result of the function
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+// Lesson 34 
+
+// Function declaration
+function calcAge1(birthYear){
+    return 2037 - birthYear;
 }
+const age1 = calcAge1(1991);
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+// Function Expression
+const calcAge2 = function(birthYear){
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1990);
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+console.log(age1, age2);
+
+// Function declarions can be called before they are define. 
