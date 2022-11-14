@@ -37,17 +37,33 @@
 // Lesson 34 
 
 // Function declaration
-function calcAge1(birthYear){
-    return 2037 - birthYear;
+// function calcAge1(birthYear){
+//     return 2037 - birthYear;
+// }
+// const age1 = calcAge1(1991);
+
+// // Function Expression
+// const calcAge2 = function(birthYear){
+//     return 2037 - birthYear;
+// }
+// const age2 = calcAge2(1990);
+
+// console.log(age1, age2);
+
+// // Function declarions can be called before they are define. 
+
+//Lesson 36 Functions calling other functions
+
+function cutFruitPieces(fruit){
+    return fruit* 4;
 }
-const age1 = calcAge1(1991);
 
-// Function Expression
-const calcAge2 = function(birthYear){
-    return 2037 - birthYear;
+function fruitProcessor (apples, oranges){
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+    return juice;
 }
-const age2 = calcAge2(1990);
 
-console.log(age1, age2);
-
-// Function declarions can be called before they are define. 
+console.log(fruitProcessor(5,10)); 
