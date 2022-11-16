@@ -188,35 +188,82 @@
 
 // console.log(fullName('Anneke'));
 
-//Section 3 - coding challenge #1
+// //Section 3 - coding challenge #1
 
-const calcAverage = (numberOne,numberTwo,numberThree)=> (numberOne+numberTwo+numberThree)/3;
-// console.log(calcAverage(10,50,22));
-// const dolphinAverageScore = calcAverage(44,23,71);
-// const koalaAverageScore = calcAverage(65,54,49);
+// const calcAverage = (numberOne,numberTwo,numberThree)=> (numberOne+numberTwo+numberThree)/3;
+// // console.log(calcAverage(10,50,22));
+// // const dolphinAverageScore = calcAverage(44,23,71);
+// // const koalaAverageScore = calcAverage(65,54,49);
 
-const dolphinAverageScore = calcAverage(85,54,41);
-const koalaAverageScore = calcAverage(23,34,32);
+// const dolphinAverageScore = calcAverage(85,54,41);
+// const koalaAverageScore = calcAverage(23,34,32);
 
-console.log(dolphinAverageScore, koalaAverageScore);
+// console.log(dolphinAverageScore, koalaAverageScore);
 
-function checkWinner (averageScoreValueOne,averageScoreValueTwo){
-    //if score 1 > than score 2 AND is more than double
-    if (averageScoreValueOne >= 2*averageScoreValueTwo){
-        console.log(`the dolphins win ${averageScoreValueOne} to ${averageScoreValueTwo}`);
-    }
-    //if score 1 > than score 2 AND is not more than double
-    else if (averageScoreValueOne > averageScoreValueTwo && averageScoreValueOne < (averageScoreValueTwo*2)) {
-        console.log(`the dolphins win, but not conclusively`);
-    }
-    //if score 2 > than score 1 AND is more than double
-    else if (averageScoreValueTwo > averageScoreValueOne && averageScoreValueTwo > (averageScoreValueOne*2)){
-        console.log(`the Koalas win ${averageScoreValueTwo} against ${averageScoreValueOne}`);
-    }
-    //if score 2 > than score 1 AND is not more than double
-    else {
-        console.log(`the koalas win, but not conclusively`);
-    }
+// function checkWinner (averageScoreValueOne,averageScoreValueTwo){
+//     //if score 1 > than score 2 AND is more than double
+//     if (averageScoreValueOne >= 2*averageScoreValueTwo){
+//         console.log(`the dolphins win ${averageScoreValueOne} to ${averageScoreValueTwo}`);
+//     }
+//     //if score 1 > than score 2 AND is not more than double
+//     else if (averageScoreValueOne > averageScoreValueTwo && averageScoreValueOne < (averageScoreValueTwo*2)) {
+//         console.log(`the dolphins win, but not conclusively`);
+//     }
+//     //if score 2 > than score 1 AND is more than double
+//     else if (averageScoreValueTwo > averageScoreValueOne && averageScoreValueTwo > (averageScoreValueOne*2)){
+//         console.log(`the Koalas win ${averageScoreValueTwo} against ${averageScoreValueOne}`);
+//     }
+//     //if score 2 > than score 1 AND is not more than double
+//     else {
+//         console.log(`the koalas win, but not conclusively`);
+//     }
+// }
+
+// checkWinner(dolphinAverageScore, koalaAverageScore);
+
+// const cars = ['honda','fiat','uno'];
+// console.log(cars);
+// console.log(cars[0]);
+// console.log(cars[1]);
+// console.log(cars[2]);
+// console.log('pause');
+// console.log(cars.length);
+// console.log(cars.length - 1);
+// console.log(cars[cars.length -1]);
+
+
+// cars[2] = 'mercedes';
+// console.log(cars);
+
+
+const years = ['1998','1997','1996','1995','1994'];
+
+function ageCalc(yourYear){
+    const age = 2022-yourYear;
+    return age;
 }
 
-checkWinner(dolphinAverageScore, koalaAverageScore);
+const age1 = years[0];
+const age2 = years[1];
+const age3 = years[2];
+
+const ages = [ageCalc(years[0]),ageCalc(years[1]), ageCalc(years[2])]
+console.log(ages);
+console.log(ages.length);
+
+// console.log(age1);
+
+// console.log(birthyearcalc(1988));
+// console.log(birthyearcalc(age1));
+// console.log(birthyearcalc(age2));
+// console.log(birthyearcalc(age3));
+
+
+const numbers = [300,3000,30000];
+const divideByThree = function(x) {
+    return x/3;
+}
+
+const postdivisionnumbers = [divideByThree(numbers[0]),divideByThree(numbers[1]), divideByThree(numbers[2])];
+console.log(postdivisionnumbers);
+console.log(postdivisionnumbers[2]);
