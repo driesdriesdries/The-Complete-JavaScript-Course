@@ -236,34 +236,80 @@
 // console.log(cars);
 
 
-const years = ['1998','1997','1996','1995','1994'];
+// const years = ['1998','1997','1996','1995','1994'];
 
-function ageCalc(yourYear){
-    const age = 2022-yourYear;
-    return age;
-}
+// function ageCalc(yourYear){
+//     const age = 2022-yourYear;
+//     return age;
+// }
 
-const age1 = years[0];
-const age2 = years[1];
-const age3 = years[2];
+// const age1 = years[0];
+// const age2 = years[1];
+// const age3 = years[2];
 
-const ages = [ageCalc(years[0]),ageCalc(years[1]), ageCalc(years[2])]
-console.log(ages);
-console.log(ages.length);
+// const ages = [ageCalc(years[0]),ageCalc(years[1]), ageCalc(years[2])]
+// console.log(ages);
+// console.log(ages.length);
 
-// console.log(age1);
+// // console.log(age1);
 
-// console.log(birthyearcalc(1988));
-// console.log(birthyearcalc(age1));
-// console.log(birthyearcalc(age2));
-// console.log(birthyearcalc(age3));
+// // console.log(birthyearcalc(1988));
+// // console.log(birthyearcalc(age1));
+// // console.log(birthyearcalc(age2));
+// // console.log(birthyearcalc(age3));
 
 
-const numbers = [300,3000,30000];
-const divideByThree = function(x) {
-    return x/3;
-}
+// const numbers = [300,3000,30000];
+// const divideByThree = function(x) {
+//     return x/3;
+// }
 
-const postdivisionnumbers = [divideByThree(numbers[0]),divideByThree(numbers[1]), divideByThree(numbers[2])];
-console.log(postdivisionnumbers);
-console.log(postdivisionnumbers[2]);
+// const postdivisionnumbers = [divideByThree(numbers[0]),divideByThree(numbers[1]), divideByThree(numbers[2])];
+// console.log(postdivisionnumbers);
+// console.log(postdivisionnumbers[2]);
+
+//Lesson 40 - Basic Array operators (methods)
+
+// const toys = ['gun',47,true];
+
+// //Adding an element to the end of an array via PUSH. returns the length of the array
+// console.log(toys);
+// const newLength = toys.push('conan');
+// console.log(toys);
+// console.log(newLength);
+
+// // Adding elements to the beginning of an array via unshift
+// const friends = ['Jean','Fred','Marco'];
+// console.log(friends);
+// friends.unshift('Kimon');
+// console.log(friends);
+
+// //remove elements 
+// const bringFriend = friends.pop(); //Removes Last - no argument needed - It returns the removed element
+// console.log(friends);
+// console.log(bringFriend);
+
+// friends.shift();  //Deletes first element
+// console.log(friends);
+
+// console.log(friends.indexOf('Fred')); //returns the index position of specific value in an array
+// console.log(friends.indexOf('Tonie')); // not in array returns -1
+
+// console.log(friends.includes('spiderman'));
+// console.log(friends.includes('marco'));
+// console.log(friends.includes('Jean'));
+
+// friends.push('guy','royce','Angel');
+// console.log(friends);
+
+// console.log( friends.includes('guy'));
+
+// if ( friends.includes('Jean') || friends.includes('George') ){
+//     console.log(`you have a friend with one or two of those names`);
+// } else {
+//     console.log(`No friends with that name`);
+// }
+
+// // how to remove a specific item in the array
+// console.log(friends);
+
