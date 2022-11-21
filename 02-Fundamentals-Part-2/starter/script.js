@@ -313,3 +313,46 @@
 // // how to remove a specific item in the array
 // console.log(friends);
 
+
+
+//Coding Challenge on functions and arrays
+
+// What is the bill value
+// const bill = 100;
+// console.log(`the total bill is $${bill}`)
+
+// Calculating the tip percentage
+// const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
+
+//converting the string to a number
+// console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
+
+// Calculating the tip
+// const tip = (bill*Number(tipPercentage)/100);
+// console.log(`The tip amount based off the bill is ${(tip)}`);
+
+//calculating the total
+// const total = bill + tip;
+
+//Writing the total
+// console.log(`Your bill is $${bill}. Your tip is $${tip}. Your total is ${total}`);
+
+console.log(`#############`);
+
+const calcTip = function (bill){
+    const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
+    console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
+    const tip = (bill*Number(tipPercentage)/100);
+    console.log(`The tip amount based off the bill is ${(tip)}`);
+    return tip;
+}
+
+console.log(calcTip(1000));
+
+const bills = [100,200,400];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+console.log(`######`);
+
+const totals = [(bills[0]+tips[0]),(bills[1]+tips[1]),(bills[2]+tips[2])];
+console.log(totals);
