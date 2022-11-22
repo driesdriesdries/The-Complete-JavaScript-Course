@@ -188,35 +188,171 @@
 
 // console.log(fullName('Anneke'));
 
-//Section 3 - coding challenge #1
+// //Section 3 - coding challenge #1
 
-const calcAverage = (numberOne,numberTwo,numberThree)=> (numberOne+numberTwo+numberThree)/3;
-// console.log(calcAverage(10,50,22));
-// const dolphinAverageScore = calcAverage(44,23,71);
-// const koalaAverageScore = calcAverage(65,54,49);
+// const calcAverage = (numberOne,numberTwo,numberThree)=> (numberOne+numberTwo+numberThree)/3;
+// // console.log(calcAverage(10,50,22));
+// // const dolphinAverageScore = calcAverage(44,23,71);
+// // const koalaAverageScore = calcAverage(65,54,49);
 
-const dolphinAverageScore = calcAverage(85,54,41);
-const koalaAverageScore = calcAverage(23,34,32);
+// const dolphinAverageScore = calcAverage(85,54,41);
+// const koalaAverageScore = calcAverage(23,34,32);
 
-console.log(dolphinAverageScore, koalaAverageScore);
+// console.log(dolphinAverageScore, koalaAverageScore);
 
-function checkWinner (averageScoreValueOne,averageScoreValueTwo){
-    //if score 1 > than score 2 AND is more than double
-    if (averageScoreValueOne >= 2*averageScoreValueTwo){
-        console.log(`the dolphins win ${averageScoreValueOne} to ${averageScoreValueTwo}`);
-    }
-    //if score 1 > than score 2 AND is not more than double
-    else if (averageScoreValueOne > averageScoreValueTwo && averageScoreValueOne < (averageScoreValueTwo*2)) {
-        console.log(`the dolphins win, but not conclusively`);
-    }
-    //if score 2 > than score 1 AND is more than double
-    else if (averageScoreValueTwo > averageScoreValueOne && averageScoreValueTwo > (averageScoreValueOne*2)){
-        console.log(`the Koalas win ${averageScoreValueTwo} against ${averageScoreValueOne}`);
-    }
-    //if score 2 > than score 1 AND is not more than double
-    else {
-        console.log(`the koalas win, but not conclusively`);
-    }
+// function checkWinner (averageScoreValueOne,averageScoreValueTwo){
+//     //if score 1 > than score 2 AND is more than double
+//     if (averageScoreValueOne >= 2*averageScoreValueTwo){
+//         console.log(`the dolphins win ${averageScoreValueOne} to ${averageScoreValueTwo}`);
+//     }
+//     //if score 1 > than score 2 AND is not more than double
+//     else if (averageScoreValueOne > averageScoreValueTwo && averageScoreValueOne < (averageScoreValueTwo*2)) {
+//         console.log(`the dolphins win, but not conclusively`);
+//     }
+//     //if score 2 > than score 1 AND is more than double
+//     else if (averageScoreValueTwo > averageScoreValueOne && averageScoreValueTwo > (averageScoreValueOne*2)){
+//         console.log(`the Koalas win ${averageScoreValueTwo} against ${averageScoreValueOne}`);
+//     }
+//     //if score 2 > than score 1 AND is not more than double
+//     else {
+//         console.log(`the koalas win, but not conclusively`);
+//     }
+// }
+
+// checkWinner(dolphinAverageScore, koalaAverageScore);
+
+// const cars = ['honda','fiat','uno'];
+// console.log(cars);
+// console.log(cars[0]);
+// console.log(cars[1]);
+// console.log(cars[2]);
+// console.log('pause');
+// console.log(cars.length);
+// console.log(cars.length - 1);
+// console.log(cars[cars.length -1]);
+
+
+// cars[2] = 'mercedes';
+// console.log(cars);
+
+
+// const years = ['1998','1997','1996','1995','1994'];
+
+// function ageCalc(yourYear){
+//     const age = 2022-yourYear;
+//     return age;
+// }
+
+// const age1 = years[0];
+// const age2 = years[1];
+// const age3 = years[2];
+
+// const ages = [ageCalc(years[0]),ageCalc(years[1]), ageCalc(years[2])]
+// console.log(ages);
+// console.log(ages.length);
+
+// // console.log(age1);
+
+// // console.log(birthyearcalc(1988));
+// // console.log(birthyearcalc(age1));
+// // console.log(birthyearcalc(age2));
+// // console.log(birthyearcalc(age3));
+
+
+// const numbers = [300,3000,30000];
+// const divideByThree = function(x) {
+//     return x/3;
+// }
+
+// const postdivisionnumbers = [divideByThree(numbers[0]),divideByThree(numbers[1]), divideByThree(numbers[2])];
+// console.log(postdivisionnumbers);
+// console.log(postdivisionnumbers[2]);
+
+//Lesson 40 - Basic Array operators (methods)
+
+// const toys = ['gun',47,true];
+
+// //Adding an element to the end of an array via PUSH. returns the length of the array
+// console.log(toys);
+// const newLength = toys.push('conan');
+// console.log(toys);
+// console.log(newLength);
+
+// // Adding elements to the beginning of an array via unshift
+// const friends = ['Jean','Fred','Marco'];
+// console.log(friends);
+// friends.unshift('Kimon');
+// console.log(friends);
+
+// //remove elements 
+// const bringFriend = friends.pop(); //Removes Last - no argument needed - It returns the removed element
+// console.log(friends);
+// console.log(bringFriend);
+
+// friends.shift();  //Deletes first element
+// console.log(friends);
+
+// console.log(friends.indexOf('Fred')); //returns the index position of specific value in an array
+// console.log(friends.indexOf('Tonie')); // not in array returns -1
+
+// console.log(friends.includes('spiderman'));
+// console.log(friends.includes('marco'));
+// console.log(friends.includes('Jean'));
+
+// friends.push('guy','royce','Angel');
+// console.log(friends);
+
+// console.log( friends.includes('guy'));
+
+// if ( friends.includes('Jean') || friends.includes('George') ){
+//     console.log(`you have a friend with one or two of those names`);
+// } else {
+//     console.log(`No friends with that name`);
+// }
+
+// // how to remove a specific item in the array
+// console.log(friends);
+
+
+
+//Coding Challenge on functions and arrays
+
+// What is the bill value
+// const bill = 100;
+// console.log(`the total bill is $${bill}`)
+
+// Calculating the tip percentage
+// const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
+
+//converting the string to a number
+// console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
+
+// Calculating the tip
+// const tip = (bill*Number(tipPercentage)/100);
+// console.log(`The tip amount based off the bill is ${(tip)}`);
+
+//calculating the total
+// const total = bill + tip;
+
+//Writing the total
+// console.log(`Your bill is $${bill}. Your tip is $${tip}. Your total is ${total}`);
+
+console.log(`#############`);
+
+const calcTip = function (bill){
+    const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
+    console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
+    const tip = (bill*Number(tipPercentage)/100);
+    console.log(`The tip amount based off the bill is ${(tip)}`);
+    return tip;
 }
 
-checkWinner(dolphinAverageScore, koalaAverageScore);
+console.log(calcTip(1000));
+
+const bills = [100,200,400];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+console.log(`######`);
+
+const totals = [(bills[0]+tips[0]),(bills[1]+tips[1]),(bills[2]+tips[2])];
+console.log(totals);
