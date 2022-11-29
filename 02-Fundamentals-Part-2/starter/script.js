@@ -362,9 +362,35 @@ const dries = {
     lastName: 'Bester',
     favouriteDrink: 'Whiskey',
     favouriteColor:'red',
-    age: 33
+    age: 33,
+    friends: ['kokie','totie','wotie']
 };
 
 console.log(dries);
 console.log(dries.favouriteColor);
 console.log(`My name is ${dries.firstName} and my favourite color is ${dries.favouriteColor}`);
+
+//Bracket Notation
+console.log(dries['lastName']);
+
+const nameKey = 'Name';
+console.log(dries['first' + nameKey]);
+console.log(dries['last' + nameKey]);
+
+const interestedIn = prompt('enter the term that you are interested in the most about Dries. Is it his firstName, lastName, favouriteDrink or color?');
+
+
+dries.social = 'facebook';
+dries['band'] = 'the strokes';
+
+if(dries[interestedIn]){
+    console.log(dries[interestedIn]);
+} else {
+    console.log(`this has not been defined`);
+}
+
+console.log(dries);
+
+//challenge
+console.log(`${dries.firstName} has ${dries.friends.length} friends, and the best one is named ${dries.friends[0]}`);
+// Dries has 3 friends and the best one is named kokie
