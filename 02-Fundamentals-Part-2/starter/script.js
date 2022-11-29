@@ -337,22 +337,34 @@
 //Writing the total
 // console.log(`Your bill is $${bill}. Your tip is $${tip}. Your total is ${total}`);
 
-console.log(`#############`);
+// console.log(`#############`);
 
-const calcTip = function (bill){
-    const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
-    console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
-    const tip = (bill*Number(tipPercentage)/100);
-    console.log(`The tip amount based off the bill is ${(tip)}`);
-    return tip;
-}
+// const calcTip = function (bill){
+//     const tipPercentage = bill <= 300 && bill >= 50 ? '15' : '20';
+//     console.log(`the tip percentage as a number is ${(Number(tipPercentage))}`);
+//     const tip = (bill*Number(tipPercentage)/100);
+//     console.log(`The tip amount based off the bill is ${(tip)}`);
+//     return tip;
+// }
 
-console.log(calcTip(1000));
+// console.log(calcTip(1000));
 
-const bills = [100,200,400];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(tips);
-console.log(`######`);
+// const bills = [100,200,400];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tips);
+// console.log(`######`);
 
-const totals = [(bills[0]+tips[0]),(bills[1]+tips[1]),(bills[2]+tips[2])];
-console.log(totals);
+// const totals = [(bills[0]+tips[0]),(bills[1]+tips[1]),(bills[2]+tips[2])];
+// console.log(totals);
+
+const dries = {
+    firstName: 'Dries',
+    lastName: 'Bester',
+    favouriteDrink: 'Whiskey',
+    favouriteColor:'red',
+    age: 33
+};
+
+console.log(dries);
+console.log(dries.favouriteColor);
+console.log(`My name is ${dries.firstName} and my favourite color is ${dries.favouriteColor}`);
