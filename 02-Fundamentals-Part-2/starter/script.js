@@ -355,42 +355,80 @@
 // console.log(`######`);
 
 // const totals = [(bills[0]+tips[0]),(bills[1]+tips[1]),(bills[2]+tips[2])];
-// console.log(totals);
+// // console.log(totals);
 
+// const dries = {
+//     firstName: 'Dries',
+//     lastName: 'Bester',
+//     favouriteDrink: 'Whiskey',
+//     favouriteColor:'red',
+//     age: 33,
+//     friends: ['kokie','totie','wotie']
+// };
+
+// console.log(dries);
+// console.log(dries.favouriteColor);
+// console.log(`My name is ${dries.firstName} and my favourite color is ${dries.favouriteColor}`);
+
+// //Bracket Notation
+// console.log(dries['lastName']);
+
+// const nameKey = 'Name';
+// console.log(dries['first' + nameKey]);
+// console.log(dries['last' + nameKey]);
+
+// const interestedIn = prompt('enter the term that you are interested in the most about Dries. Is it his firstName, lastName, favouriteDrink or color?');
+
+
+// dries.social = 'facebook';
+// dries['band'] = 'the strokes';
+
+// if(dries[interestedIn]){
+//     console.log(dries[interestedIn]);
+// } else {
+//     console.log(`this has not been defined`);
+// }
+
+// console.log(dries);
+
+// //challenge
+// console.log(`${dries.firstName} has ${dries.friends.length} friends, and the best one is named ${dries.friends[0]}`);
+// // Dries has 3 friends and the best one is named kokie
+
+// Lesson 44
 const dries = {
     firstName: 'Dries',
     lastName: 'Bester',
+    job: 'marketer',
     favouriteDrink: 'Whiskey',
     favouriteColor:'red',
-    age: 33,
-    friends: ['kokie','totie','wotie']
+    birthYear: 1988,
+    friends: ['kokie','totie','wotie'],
+    hasDriversLicense: true,
+    
+    // calcAge: function(birthYear){
+    //     return 2022 - birthYear;
+    // }
+    // calcAge: function(birthYear){
+    //     console.log(this);
+    //     return 2022 - this.birthYear;
+    // }
+    calcAge: function(){
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+    }
 };
 
-console.log(dries);
-console.log(dries.favouriteColor);
-console.log(`My name is ${dries.firstName} and my favourite color is ${dries.favouriteColor}`);
+console.log(dries.calcAge());
+console.log(dries.age);
 
-//Bracket Notation
-console.log(dries['lastName']);
+// console.log(dries['calcAge'](1988));
 
-const nameKey = 'Name';
-console.log(dries['first' + nameKey]);
-console.log(dries['last' + nameKey]);
+//Challenge
+//Jonas is a 46 year old teacher and he has a/no drivers license
 
-const interestedIn = prompt('enter the term that you are interested in the most about Dries. Is it his firstName, lastName, favouriteDrink or color?');
-
-
-dries.social = 'facebook';
-dries['band'] = 'the strokes';
-
-if(dries[interestedIn]){
-    console.log(dries[interestedIn]);
-} else {
-    console.log(`this has not been defined`);
-}
-
-console.log(dries);
-
-//challenge
-console.log(`${dries.firstName} has ${dries.friends.length} friends, and the best one is named ${dries.friends[0]}`);
-// Dries has 3 friends and the best one is named kokie
+console.log(dries.getSummary());
